@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>PW1</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    /* Style the header */
+    header {
+      background-color: rgb(39, 39, 115);
+      padding: 20px;
+      text-align: center;
+      font-size: 30px;
+      color: white;
+    }
+    
+    /* Container for flexboxes */
+    section {
+      display: -webkit-flex;
+      display: flex;
+    }
+    
+    /* Style the navigation menu */
+    nav {
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      background: rgb(177, 180, 181);
+      padding: 20px;
+    }
+    
+    /* Style the list inside the menu */
+    nav ul {
+      list-style-type: disc;
+      padding: 10px;
+    }
+    
+    /* Style the content */
+    main {
+      -webkit-flex: 3;
+      -ms-flex: 3;
+      flex: 3;
+      background-color: #f1f1f1;
+      padding: 10px;
+    }
+    
+    /* Style the footer */
+    footer {
+      background-color: #777;
+      padding: 10px;
+      text-align: left;
+      color: white;
+    }
+    
+    /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+    @media (max-width: 600px) {
+      section {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+      }
+    }
+    </style>
+    </head>
+<body>
+
+    <header>
+      <h1>Getting to know HTML5</h1>
+      <h2>by Maslouskaya Marya</h2>
+    </header>
+    
+    <section>
+      <nav>
+        <ul>
+            <li><a href="#Q1"><h3>Question 1</h3></a></li>
+            <li><a href="#Q2"><h3>Question 2</h3></a></li>
+            <li><a href="#Q3"><h3>Question 3</h3></a></li>
+            <li><a href="#Q4"><h3>Question 4</h3></a></li>
+            <li><a href="#Q5"><h3>Question 5</h3></a></li>
+            <li><a href="#Q6"><h3>Question 6</h3></a></li>
+        </ul>  
+      </nav>
+      
+      <main>
+       <dl>
+         <dt id="Q1"><h3>1. When HTML5 has become a standard? What were the main reasons for developing
+            new standard?</h3></dt>
+         <dd>HTML5 was first released in a public-facing form on 22 January 2008, with a major update and "W3C Recommendation" status in October 2014. 
+             Its goals were to improve the language with support for the latest multimedia and other new features; to keep the language both easily readable 
+             by humans and consistently understood by computers and devices such as web browsers, parsers, etc., without XHTML's rigidity; 
+             and to remain backward-compatible with older software. HTML5 is intended to subsume not only HTML 4 but also XHTML1 and even the DOM Level 2 HTML itself. </dd>
+         <dt id="Q2"><h3>2. What is a difference between W3C HTML5 and WHATWG HTML Living Standard?</dt>
+         <dd>The W3C "HTML5" standard was snapshot-based (HTML5, HTML 5.1, etc.) and static, while the WHATWG "HTML living standard" is continually updated.</dd>
+         <dt id="Q3"><h3>3. What is the minimal HTML page code?</h3></dt>
+         <dd>In order to remain valid, an HTML document must contain a certain set of elements. These elements are called the minimal HTML. 
+             All documents must contain the minimal HTML or they are not valid, well-formed documents.</dd>
+         <dt id="Q4"><h3>4. Comment on semantic and presentational markup. Why presentational markup is
+            considered deprecated now?</h3></dt>
+         <dd>Semantic HTML is a way of writing HTML that emphasises the meaning of the encoded information over its presentation (look). 
+             HTML has included semantic markup from its inception, but has also included presentational markup. 
+             Presentational markup indicates the appearance of the text, regardless of its purpose. 
+             Since the late 1990s, when Cascading Style Sheets were beginning to work in most browsers, 
+             web authors have been encouraged to avoid the use of presentational HTML markup with a view to the separation of content and presentation. 
+             Good semantic HTML also improves the accessibility of web documents.  Most presentational markup elements have become deprecated 
+             under the HTML 4.0 specification in favour of using CSS for styling.</dd>
+         <dt id="Q5"><h3>5. How you can check browser support for particular tag or attribute?</h3></dt>
+         <dd>We can check if a browser supports a particular HTML tag or attribute by using the caniuse.com website. 
+             This website provides up-to-date information on browser support for various web technologies, including HTML tags and attributes.</dd>
+         <dt id="Q6"><h3>6. What are the audio and video formats, officially supported by HTML standard? What
+            happens if you use other format?</h3></dt>
+         <dd>HTML5 supports a number of different media formats for images, audio, and video. Audio: MP3, Ogg Vorbis, WAV, AAC; Video: MPEG-4, H.264, WebM. 
+             If you use other formats that are not officially supported by the HTML standard, the browser may not be able to play the audio or video content properly. 
+             In such cases, the browser may either display an error message indicating that the format is not supported, or it may attempt to use a fallback mechanism to play the content.</dd>
+       </dl>
+       <h2>What is HTML5?</h2>
+       <video width="560" height="315" controls>
+        <source src="WhatisHTML5.mp4" type="video/mp4">
+        <source src="WhatisHTML5.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+
+      <h2>The HTML song</h2>
+      <audio controls>
+        <source src="HTMLsong.ogg" type="audio/ogg">
+        <source src="HTMLsong.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+    </main>
+    </section>
+
+    <footer>
+        <p>
+            <img src="sm.aspx.png" alt="SB BSU logo image" style="float:left;width:50px;height:33px;">
+            Throughout the work, everything was clear thanks to the website w3schools.com. Everything was explained properly there. 
+            The most difficult was to add the video to the page, because I've tried several methods, but none of them worked.
+            I coped with this problem only thanks to the teacher. During this lab I've learned how to create basic html page and revised some information about html5.  
+            
+        </p>
+    </footer>
+    
+    </body>
+    </html>
+    
+    
