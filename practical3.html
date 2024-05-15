@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>PW3</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    h1 {
+        border-left: inset;
+        border-bottom: inset;
+        padding-left: 10px;
+    }
+    ul.border2 {
+        border-left: 3px solid rgb(19, 87, 182);
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-right: 25px;
+        background-color: lightblue;
+    }
+    a {
+        border: solid rgba(43, 152, 177, 0.523);
+        background-color: rgba(43, 152, 177, 0.523);
+    }
+    img {
+        border-left: 3px solid rgb(19, 87, 182);
+        border-bottom: 3px solid rgb(19, 87, 182);
+        padding-left: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 25px;
+        display: block;
+    }
+
+    #background {
+  background: url(color-wheel.png) right bottom no-repeat, url(water_pool.png) left top repeat;
+  opacity: 0.7;
+}
+   
+</style>
+</head>
+
+<main style="margin: 25px">
+    <h1>The ways to open developers console in Mozilla Firefox and Safari</h1>
+    <h2>Firefox</h2>
+    <p>There are two ways to open developer tools in Mozilla Firefox:</p>
+    <ol>
+        <li>Right-click on the page, then choose <strong>Inspect Element</strong> from the menu and after that select the <strong>Console</strong> tab. <em>(or ctrl+click for Apple touchpads/magic mouse devices)</em></li>
+        <li>Use the shortcut. You should press Cmd+Option+K <em>(for Mac)</em> or Ctrl+Shift+J <em>(Windows)</em> on your keyboard.</li>
+    </ol>
+    <h2>Safari</h2>
+    <p>To open the developer console on the Safari you need to make the <strong>Develop</strong> menu visible. To do it, you'll need to go to <strong>Safari</strong> > <strong>Preferences</strong> > <strong>Advanced</strong> and enable <strong>Show Develop menu in menu bar.</strong></p>
+    <p>Then, you can do one of the following:</p>
+    <ul class="border2">
+        <li>Right-click on the page, select <strong>Inspect Element</strong> and then choose the <strong>Console</strong> tab. <em>(or ctrl+click for Apple touchpads/magic mouse devices)</em></li>
+        <li>Use the hotkey combination Cmd + Option + C</li>
+    </ul>
+
+    <h1>Use cases for choosing absolute links and choosing relative links</h1>
+    <h2>Absolute URLs</h2>
+    <p>An absolute URL provides a complete and specific location of a webpage. It includes the entire web address, starting from the protocol to the page name. For example, “https://example.com/blog/article.html” is an absolute URL.</p>
+    <h2>Relative URLs</h2>
+    <p>In contrast, a relative URL provides a shorter, more flexible address that depends on the context within the website. It only includes the path to the webpage relative to the current location. For instance, if we are on the “https://example.com/blog/” page, a relative URL for the article would be “/blog/article.html.”</p>
+    <h2>Use cases for choosing absolute links:</h2>
+    <ul class="border2">
+        <li>When linking to resources on external websites</li>
+        <li>When linking to resources on different subdomains or domains within the same website</li>
+        <li>When the website needs to maintain consistent links even if the site's URL structure changes</li>
+    </ul>
+    <h2>Use cases for choosing relative links:</h2>
+    <ul class="border2">
+        <li>When linking to resources within the same website</li>
+        <li>When building a website with a consistent URL structure, where the links need to adapt automatically to changes in the site's domain or subdomain</li>
+    </ul>
+    <h2>What way of including internal links into the HTML page is more preferable?</h2>
+    <p>An absolute URL — while potentially more work upfront — is easier to maintain in the long run. Not only is it easier for the search engines to understand, but it prevents links from easily breaking, prevents duplicate content issues and preserves the crawl budget.</p>
+
+    <h1>Image formats used in web-development</h1>
+    <p>JPG or (JPEG), GIF, and PNG are the main graphic formats used online. These file formats are also used in print, multimedia, and presentations.</p>
+    <h2>What is the difference between JPG, GIF and PNG formats?</h2>
+    <h3>JPG</h3>
+    <p>JPG or JPEG (Joint Photographic Experts Group) is the main file format used for online and printed images. This file type is great for photographs as it supports a full spectrum of colours. It also displays well on all devices and can be easily saved.</p>
+    <p>One problem is that while you can reduce the file size of JPGs, the quality of the image will lessen as you compress the file. It is therefore not great for images that need to be continuously edited.</p>
+    <h3>GIF</h3>
+    <p>GIF (Graphics Interchange Format) is the main file format used for animation. It is the only way to create online animations without using Flash.</p>
+    <p>GIF only supports 8-bit colours meaning you can only use 256 colours.</p>
+    <p>GIF does support background transparency and can be used for line graphics, icons, and logos as well as for basic animations. Unlike JPG, image quality will not degrade with editing and re-saves.</p>
+    <p>GIF also has the smallest file size of all three file formats so should not affect website load time at all if uploading logos or other designs to a site.</p>
+    <h3>PNG</h3>
+    <p>PNG (Portable Network Graphics) was designed as an improved alternative to GIF. It is great for internet graphics and supports transparency in a way that GIF files do not.</p>
+    <p>PNG files support 24-bit colours, which includes 16.7 million colours, and features background transparency. Image quality will also not decrease no matter how many times the image is compressed or edited and re-saved.</p>
+    <p>Unlike GIF, PNG does not support animation.</p>
+    <h2>What is WEBP image type?</h2>
+    <p>WebP is an open-source image file format developed by Google that supports both lossy and lossless image compression. A WebP file is an image file in the WebP format. First introduced in 2010, the WebP format has been gaining traction online in recent years and was created to deliver high-quality, lightweight image files over the web.</p>
+    <h2>What is SVG?</h2>
+    <p>SVG is a scalable vector graphics markup language created by the World Wide Web Consortium and is a subset of the Extensible Markup Language XML. SVG is used to define vector-based graphics for the Web. SVG defines graphics in XML format. Each element and attribute in SVG files can be animated.</p>
+    <p>You can learn more about SVG <a href="https://www.w3schools.com/graphics/svg_intro.asp">here</a>.</p>
+
+    <h2>Screenshot of the header</h2>
+    <img src="header_screenshot.png" alt="Screenshot of the header">
+    <p style="background-color:lightblue">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Suspendisse ultrices gravida dictum fusce ut. Mattis nunc sed blandit libero volutpat sed cras ornare. Sit amet mattis vulputate enim nulla. Eget nunc scelerisque viverra mauris in aliquam sem fringilla. Posuere urna nec tincidunt praesent. Egestas sed tempus urna et pharetra pharetra massa massa ultricies. Odio aenean sed adipiscing diam donec adipiscing tristique risus. In fermentum posuere urna nec. Faucibus a pellentesque sit amet porttitor eget dolor morbi non. Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet. Risus at ultrices mi tempus imperdiet.</p>
+    <p style="background-color:#2E78BD">Est pellentesque elit ullamcorper dignissim. Sed elementum tempus egestas sed sed risus pretium. Scelerisque eleifend donec pretium vulputate sapien. Enim tortor at auctor urna nunc id cursus metus aliquam. Lobortis feugiat vivamus at augue eget arcu dictum. Sit amet porttitor eget dolor morbi non arcu risus quis. Aliquet porttitor lacus luctus accumsan tortor posuere ac. Aenean et tortor at risus. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Pharetra pharetra massa massa ultricies. Et ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Tincidunt nunc pulvinar sapien et. Cursus euismod quis viverra nibh cras pulvinar mattis nunc.</p>
+    <p style="background-color:rgb(44, 87, 126);">Semper eget duis at tellus at urna condimentum mattis. Bibendum at varius vel pharetra vel turpis nunc. Id interdum velit laoreet id donec ultrices tincidunt arcu. Aliquet enim tortor at auctor urna nunc. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Est ultricies integer quis auctor. Non sodales neque sodales ut etiam sit. Dignissim convallis aenean et tortor at risus. Sed velit dignissim sodales ut eu. Eu sem integer vitae justo. Velit dignissim sodales ut eu sem integer vitae. Nibh venenatis cras sed felis.</p>
+    <p style="background-image: linear-gradient(to bottom right,blue, white)">Magna sit amet purus gravida quis blandit turpis cursus. Semper risus in hendrerit gravida rutrum quisque non tellus orci. Pharetra massa massa ultricies mi quis hendrerit dolor magna eget. Consectetur adipiscing elit pellentesque habitant morbi tristique senectus et netus. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est. Posuere morbi leo urna molestie at elementum. Aliquam etiam erat velit scelerisque in. Id velit ut tortor pretium viverra suspendisse. Faucibus ornare suspendisse sed nisi lacus sed viverra tellus. In ornare quam viverra orci sagittis eu volutpat odio facilisis. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus. Amet dictum sit amet justo. Suspendisse potenti nullam ac tortor. Morbi quis commodo odio aenean sed adipiscing. Sapien et ligula ullamcorper malesuada proin libero nunc. Accumsan in nisl nisi scelerisque eu ultrices vitae auctor. Ac feugiat sed lectus vestibulum. Leo a diam sollicitudin tempor id eu nisl.</p>
+    <p style="background-image: repeating-linear-gradient(lightblue 30%, white 70%)">Fringilla urna porttitor rhoncus dolor purus non enim praesent. Gravida arcu ac tortor dignissim. Nec tincidunt praesent semper feugiat. Integer feugiat scelerisque varius morbi. Massa eget egestas purus viverra accumsan. Ultricies mi eget mauris pharetra et ultrices neque ornare. Velit dignissim sodales ut eu sem integer vitae justo eget. Amet facilisis magna etiam tempor orci. Vestibulum morbi blandit cursus risus at ultrices mi. Enim sed faucibus turpis in. Purus sit amet luctus venenatis lectus magna fringilla urna porttitor. Pharetra et ultrices neque ornare aenean. Et malesuada fames ac turpis egestas. Auctor urna nunc id cursus metus. Mollis aliquam ut porttitor leo a diam sollicitudin. Sed tempus urna et pharetra pharetra massa. Ut porttitor leo a diam. Mattis molestie a iaculis at erat.</p>
+    <p style="background-image: url(water.jpg);">Enim blandit volutpat maecenas volutpat blandit aliquam etiam erat velit. Rutrum quisque non tellus orci ac auctor augue mauris augue. Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare. Urna nunc id cursus metus aliquam. Quis enim lobortis scelerisque fermentum dui. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Tempus urna et pharetra pharetra massa massa ultricies mi quis. Potenti nullam ac tortor vitae purus. Platea dictumst quisque sagittis purus sit. Sapien pellentesque habitant morbi tristique. Adipiscing vitae proin sagittis nisl. Facilisis mauris sit amet massa. Orci a scelerisque purus semper eget duis at tellus. Nisl condimentum id venenatis a. Amet massa vitae tortor condimentum. Pretium fusce id velit ut tortor pretium. Id nibh tortor id aliquet. Ornare arcu dui vivamus arcu felis bibendum ut tristique.</p>
+    <div id='background'><p>Nunc id cursus metus aliquam eleifend mi in nulla. Auctor urna nunc id cursus metus aliquam eleifend. Pharetra vel turpis nunc eget lorem dolor. Parturient montes nascetur ridiculus mus mauris vitae ultricies. Ut pharetra sit amet aliquam id diam maecenas ultricies. Sed vulputate mi sit amet mauris. Proin nibh nisl condimentum id. Dolor sit amet consectetur adipiscing. Consequat mauris nunc congue nisi vitae suscipit tellus mauris a. Sit amet risus nullam eget felis. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget. Auctor eu augue ut lectus arcu bibendum at. Posuere urna nec tincidunt praesent semper feugiat nibh. Amet purus gravida quis blandit. Feugiat in fermentum posuere urna nec tincidunt. Sed felis eget velit aliquet sagittis id.</p></div>
+
+</main>
