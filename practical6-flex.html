@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>News Website</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Link Styles */
+a {
+  color: #75871a;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Button Styles */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #75871a;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #81b03aab;
+}
+
+/* Main Content Styles */
+main {
+  padding: 20px;
+}
+
+article {
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #333;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.footer-text {
+  font-size: 14px;
+}
+/* Navigation Styles */
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+/* Main Content Styles */
+.main-content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+  color: #1b7a2a;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+  background-color: #000000;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: #17721a;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  background-color: #1c8411;
+}
+
+.news-section {
+    margin: 20px;
+    padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.news-preview {
+  width: 30%;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px #14610a;
+  border-radius: 5px;
+}
+
+.news-preview img {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.news-preview .content {
+  padding: 15px;
+}
+
+.news-preview h3 {
+  margin-top: 0;
+}
+
+.news-preview p {
+  margin-bottom: 10px;
+}
+
+.news-preview button {
+  background-color: #297716;
+  color: #fff;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #0d530e;
+}
+
+</style>
+<body>
+    <aside>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">World</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Travel</a></li>
+          </ul>
+        </nav>
+      </aside>
+<header>
+  <h1>Wonder World</h1>
+  <div class="top-news">
+    <img src="city.jpg" alt="Top News Image" width="auto">
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <button>Read More</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="news-section">
+    <div class="news-preview">
+      <img src="italy.jpeg" alt="News Image 1">
+      <div class="content">
+        <h3>The Land of Smiles: Immersing in the Vibrant Culture of Thailand</h3>
+        <p>Thailand | 14.05.23</p>
+        <p>Excerpt text here...</p>
+        <button>Read More</button>
+      </div>
+    </div>
+
+    <div class="news-preview">
+        <img src="paris.jpg" alt="News Image 2">
+        <div class="content">
+          <h3>Lost in Time: Discovering the Ancient Wonders of Egypt</h3>
+          <p>Egypt | 10.04.23</p>
+          <p>Excerpt text here...</p>
+          <button>Read More</button>
+        </div>
+      </div>
+
+<div class="news-preview">
+      <img src="nature.jpg" alt="News Image 3">
+      <div class="content">
+        <h3>From East to West: A Cultural Odyssey through India</h3>
+        <p>India | 0403.24</p>
+        <p>Excerpt text here...</p>
+        <button>Read More</button>
+      </div>
+</div>
+  </section>
+  
+
+ 
+</main>
+<footer>
+    <p>&copy; 2023 Wonderful World</p>
+  </footer>
+
+</body>
+</html>

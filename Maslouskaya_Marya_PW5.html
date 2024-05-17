@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practical 5 - Holy Grail Template</title>
+    <style>
+        img {
+  margin: 10px;
+  float: right;
+}
+h1{
+    padding-left: 5px;
+    margin-top: 100px;
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+li{
+    font-size: 14px;
+    padding: 5px;
+}
+p{
+    padding-left: 5px;
+    font-size: 16px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#box-model">Box Model in CSS</a></li>
+                <li><a href="#clearfix-hack">Clearfix Hack</a></li>
+                <li><a href="#margin-collapse">Margin Collapse</a></li>
+                <li><a href="#holy-grail-layout">Holy Grail Layout</a></li>
+                <li><a href="#modern-ways">Modern Ways to Achieve Holy Grail Layout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h1 id="box-model">Box Model in CSS <img src="p1.jpg" alt="P1" width="400px"><img src="p1.1.jpg" alt="P1.1" width="400px"></h1>
+            <p>The box model in CSS is a fundamental concept that describes how elements are rendered and how their dimensions are calculated. It consists of four components: content, padding, border, and margin. The box-sizing property in CSS controls how the total width and height of an element are calculated, taking into account the different components of the box model.</p>
+
+            <h1 id="clearfix-hack">Clearfix Hack<img src="p2.2.jpg" alt="P2.2" width="400px"><img src="p2.jpg" alt="P2" width="400px"></h1>
+            <p>A "clearfix hack" is a technique used in CSS to address issues related to clearing floats within a container. When elements are floated inside a container, the container itself may collapse or not properly expand to contain the floated elements. This can lead to layout issues where subsequent content does not display correctly or overlaps with the floated elements.
+
+                To fix this problem, a clearfix hack is applied to force the container to properly contain its floated children. There are several ways to create a clearfix hack, but one common method is to add an additional element with the CSS property clear: both after the floated elements within the container.
+                </p>
+
+            <h1 id="margin-collapse">Margin Collapse<img src="p3.jpg" alt="P3" width="400px" height="200px"><img src="p3.3.jpg" alt="P3.3" width="400px" height="200px"></h1>
+            <p>Margin collapse is a CSS phenomenon where the margins of adjacent elements collapse into a single margin, rather than being added together. This can occur in certain scenarios when margins of adjacent elements are touching or overlapping. Overall, margin: auto is commonly used for centering block-level elements horizontally, while negative margin values offer flexibility in creating unique layout effects, adjusting spacing, and centering elements within containers.</p>
+
+            <h1 id="holy-grail-layout">Problem with Holy Grail Layout<img src="p4.jpg" alt="P4" width="400px height=200px"><img src="p4.4.jpg" alt="P4.4" width="400px height="200px"></h1>
+            <p>The Holy Grail layout is a common web design pattern that consists of a header, footer, and three columns in the middle, with the center column being the main content and the side columns serving as sidebars. The challenge with achieving the Holy Grail layout traditionally stemmed from creating a flexible and responsive design that could adapt to different screen sizes and maintain a consistent layout.
+            </p>
+
+            <h1 id="modern-ways">Modern Ways to Achieve Holy Grail Layout<img src="p5.jpg" alt="P5" width="400px height=200px"><img src="p5.5.jpg" alt="P5.5" width="400px height="200px"></h1>
+            <p>To address these challenges and achieve the Holy Grail layout, web developers often used a combination of CSS techniques such as floats, positioning, flexbox, grid layout, and CSS frameworks like Bootstrap. Modern CSS features like flexbox and grid layout have made it easier to create complex layouts like the Holy Grail layout with less code and more flexibility.
+
+                By leveraging these CSS techniques effectively and considering responsive design principles, developers can overcome the challenges associated with achieving the Holy Grail layout and create visually appealing, functional, and responsive web layouts.</p>
+        </article>
+    </main>
+
+    <footer>
+        <p><b>Student:</b> Maslouskaya Marya</p>
+        <p><b>Course:</b> 353</p>
+        <p><b>Date:</b> 2024, 15.05, Minsk</p>
+        <p><b>Additional resources:</b></p>
+
+        <ul>
+            <li><a href="https://www.digitalocean.com/community/tutorials/css-css-grid-holy-grail-layout">Digital ocean</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
